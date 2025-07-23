@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Очки</title>
+</head>
+<body>
+	<h1>ОЧКИ: <span class="score-display">0</span></h1>
+	<button id="score-button">Поменять счет</button>
+
+	<script type="text/javascript">
+		let number = 0;
+
+		const scoreButton = document.getElementById('score-button');
+		const scoreDisplay = document.querySelector('.score-display');
+
+		scoreButton.addEventListener('click', function() {
+			number += 1;
+			scoreDisplay.textContent = number;
+		});
+	</script>
+</body>
+</html>
